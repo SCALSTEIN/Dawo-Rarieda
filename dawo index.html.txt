@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" style="height: auto; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dawo Foundation - Rarieda Rising</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .bounce-icon { animation: bounce 2s infinite; }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f97316 0%, #16a34a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gradient-border-orange {
+            background: linear-gradient(white, white) padding-box,
+                        linear-gradient(135deg, #f97316, #fb923c) border-box;
+            border: 4px solid transparent;
+        }
+        .gradient-border-green {
+            background: linear-gradient(white, white) padding-box,
+                        linear-gradient(135deg, #16a34a, #4ade80) border-box;
+            border: 4px solid transparent;
+        }
+        .gradient-border-blue {
+            background: linear-gradient(white, white) padding-box,
+                        linear-gradient(135deg, #0ea5e9, #38bdf8) border-box;
+            border: 4px solid transparent;
+        }
+    </style>
+</head>
+<body style="height: auto; min-height: 100%;" class="bg-white">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold gradient-text">DAWO</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-orange-500 font-semibold transition">About</a>
+                <a href="#leadership" class="text-gray-700 hover:text-orange-500 font-semibold transition">Leadership</a>
+                <a href="#programs" class="text-gray-700 hover:text-orange-500 font-semibold transition">Programs</a>
+                <a href="#impact" class="text-gray-700 hover:text-orange-500 font-semibold transition">Impact</a>
+                <a href="#involved" class="text-gray-700 hover:text-orange-500 font-semibold transition">Get Involved</a>
+            </div>
+            <a href="#involved" class="bg-orange-500 text-white px-6 py-2 rounded-full font-bold hover:bg-orange-600 transition">Donate</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 via-white to-green-50 pattern-bg overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Rarieda <span class="gradient-text">Rising</span>
+                </h1>
+                <p class="text-2xl sm:text-3xl text-gray-700 font-semibold mb-4">Your Community, Your Future, Our Mission.</p>
+                <p class="text-xl text-gray-600 mb-8">Building Resilience. Spreading Hope. Leveling the Field.</p>
+                <a href="#involved" class="inline-block bg-orange-500 text-white px-10 py-4 rounded-full text-xl font-bold hover:bg-orange-600 transform hover:scale-105 transition shadow-lg">Join the Movement</a>
+            </div>
+            <div data-aos="fade-left" class="relative">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop" alt="Community in Rarieda" class="rounded-3xl shadow-2xl">
+                <div class="absolute -bottom-6 -left-6 bg-green-500 text-white p-6 rounded-2xl shadow-xl">
+                    <p class="text-3xl font-bold">2026-2032</p>
+                    <p class="text-lg">Strategic Vision</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">The Heart Behind the Hustle</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Empowering Rarieda through inclusive education, health, and economic resilience.</p>
+        </div>
+
+        <!-- Values Cards -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div data-aos="zoom-in" data-aos-delay="0" class="bg-gradient-to-br from-orange-100 to-orange-50 p-8 rounded-3xl hover-lift">
+                <div class="text-5xl mb-4 bounce-icon">🎯</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Radical Accountability</h3>
+                <p class="text-gray-700">We own our impact, measure what matters, and stay transparent.</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="100" class="bg-gradient-to-br from-green-100 to-green-50 p-8 rounded-3xl hover-lift">
+                <div class="text-5xl mb-4 bounce-icon">🤝</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Community Ownership</h3>
+                <p class="text-gray-700">Solutions designed with the community, not for them.</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="200" class="bg-gradient-to-br from-blue-100 to-blue-50 p-8 rounded-3xl hover-lift">
+                <div class="text-5xl mb-4 bounce-icon">💪</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">The Inclusion Rule</h3>
+                <p class="text-gray-700">No one left behind. Everyone has a seat at the table.</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300" class="bg-gradient-to-br from-orange-100 to-orange-50 p-8 rounded-3xl hover-lift">
+                <div class="text-5xl mb-4 bounce-icon">🚀</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Fearless Innovation</h3>
+                <p class="text-gray-700">Bold ideas, smart risks, and breakthrough solutions.</p>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div data-aos="fade-up" class="bg-gradient-to-r from-orange-500 via-green-500 to-blue-500 p-1 rounded-3xl">
+            <div class="bg-white p-8 rounded-3xl">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">The Roadmap: 2026-2032 Strategic Objectives</h3>
+                <div class="overflow-x-auto">
+                    <div class="flex space-x-6 pb-4 min-w-max">
+                        <div class="flex-shrink-0 w-64 bg-orange-50 p-6 rounded-2xl border-4 border-orange-500">
+                            <p class="text-orange-600 font-bold mb-2">2026-2027</p>
+                            <p class="text-gray-900 font-semibold">Foundation Building</p>
+                            <p class="text-sm text-gray-600 mt-2">Establish core programs and community partnerships</p>
+                        </div>
+                        <div class="flex-shrink-0 w-64 bg-green-50 p-6 rounded-2xl border-4 border-green-500">
+                            <p class="text-green-600 font-bold mb-2">2028-2029</p>
+                            <p class="text-gray-900 font-semibold">Scale & Impact</p>
+                            <p class="text-sm text-gray-600 mt-2">Expand reach and deepen community engagement</p>
+                        </div>
+                        <div class="flex-shrink-0 w-64 bg-blue-50 p-6 rounded-2xl border-4 border-blue-500">
+                            <p class="text-blue-600 font-bold mb-2">2030-2032</p>
+                            <p class="text-gray-900 font-semibold">Sustainability & Legacy</p>
+                            <p class="text-sm text-gray-600 mt-2">Self-sustaining programs and lasting transformation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leadership Section - NEW -->
+<section id="leadership" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-50 via-white to-blue-50 pattern-bg">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">Meet the Change-Makers</h2>
+            <p class="text-xl text-gray-600">The visionaries steering Rarieda's transformation</p>
+        </div>
+
+        <!-- Board of Trustees -->
+        <div class="mb-20">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-gray-900 mb-3">The Guardians 🛡️</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">A team of 9 strategic thinkers ensuring we stay true to Rarieda's needs</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div data-aos="zoom-in" data-aos-delay="0" class="text-center hover-lift">
+                    <div class="gradient-border-orange rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" alt="Board Member" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Dr. Sarah Omondi</h4>
+                    <p class="text-orange-600 font-semibold mb-2">Board Chairperson</p>
+                    <p class="text-sm text-gray-600">Education Policy Expert</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="100" class="text-center hover-lift">
+                    <div class="gradient-border-green rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" alt="Board Member" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">James Otieno</h4>
+                    <p class="text-green-600 font-semibold mb-2">Vice Chairperson</p>
+                    <p class="text-sm text-gray-600">Healthcare Administrator</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="200" class="text-center hover-lift">
+                    <div class="gradient-border-blue rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop" alt="Board Member" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Grace Akinyi</h4>
+                    <p class="text-blue-600 font-semibold mb-2">Treasurer</p>
+                    <p class="text-sm text-gray-600">Financial Strategist</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="300" class="text-center hover-lift">
+                    <div class="gradient-border-orange rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Board Member" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Peter Owino</h4>
+                    <p class="text-orange-600 font-semibold mb-2">Secretary</p>
+                    <p class="text-sm text-gray-600">Legal Advisor</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="400" class="text-center hover-lift">
+                    <div class="gradient-border-green rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop" alt="Board Member" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Mary Adhiambo</h4>
+                    <p class="text-green-600 font-semibold mb-2">Board Member</p>
+                    <p class="text-sm text-gray-600">Agriculture Specialist</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="500" class="text-center hover-lift">
+                    <div class="gradient-border-blue rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop" alt="Board Member" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">David Okoth</h4>
+                    <p class="text-blue-600 font-semibold mb-2">Board Member</p>
+                    <p class="text-sm text-gray-600">Community Development</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="600" class="text-center hover-lift">
+                    <div class="gradient-border-orange rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&fit=crop" alt="Board Member" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Ruth Anyango</h4>
+                    <p class="text-orange-600 font-semibold mb-2">Board Member</p>
+                    <p class="text-sm text-gray-600">Youth Empowerment</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="700" class="text-center hover-lift">
+                    <div class="gradient-border-green rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="Board Member" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Michael Odhiambo</h4>
+                    <p class="text-green-600 font-semibold mb-2">Board Member</p>
+                    <p class="text-sm text-gray-600">Technology & Innovation</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="800" class="text-center hover-lift">
+                    <div class="gradient-border-blue rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop" alt="Board Member" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Elizabeth Awuor</h4>
+                    <p class="text-blue-600 font-semibold mb-2">Board Member</p>
+                    <p class="text-sm text-gray-600">Gender & Inclusion</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Executive Team -->
+        <div>
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h3 class="text-3xl font-bold text-gray-900 mb-3">The Engine Room ⚙️</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">The powerhouse team turning vision into reality on the ground</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div data-aos="flip-up" data-aos-delay="0" class="bg-white p-6 rounded-3xl shadow-lg hover-lift text-center">
+                    <div class="gradient-border-orange rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop" alt="Executive Director" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">John Ouma</h4>
+                    <p class="text-orange-600 font-semibold mb-2">Executive Director</p>
+                    <p class="text-sm text-gray-600">The Lead Architect of our Vision</p>
+                </div>
+
+                <div data-aos="flip-up" data-aos-delay="100" class="bg-white p-6 rounded-3xl shadow-lg hover-lift text-center">
+                    <div class="gradient-border-green rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Programs Manager" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Jane Achieng</h4>
+                    <p class="text-green-600 font-semibold mb-2">Programs Manager</p>
+                    <p class="text-sm text-gray-600">Turning ideas into impact on the ground</p>
+                </div>
+
+                <div data-aos="flip-up" data-aos-delay="200" class="bg-white p-6 rounded-3xl shadow-lg hover-lift text-center">
+                    <div class="gradient-border-blue rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Finance Manager" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Susan Atieno</h4>
+                    <p class="text-blue-600 font-semibold mb-2">Finance & Admin</p>
+                    <p class="text-sm text-gray-600">The wizard of transparency and accountability</p>
+                </div>
+
+                <div data-aos="flip-up" data-aos-delay="300" class="bg-white p-6 rounded-3xl shadow-lg hover-lift text-center">
+                    <div class="gradient-border-orange rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop" alt="Field Officers" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Field Officers Team</h4>
+                    <p class="text-orange-600 font-semibold mb-2">Community Champions</p>
+                    <p class="text-sm text-gray-600">Our local heroes working village-by-village</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Programs Section -->
+<section id="programs" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 pattern-bg">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">Project Spotlight</h2>
+            <p class="text-xl text-gray-600">Five pillars powering Rarieda's transformation</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- The Spark -->
+            <div data-aos="flip-left" class="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop" alt="Education" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="inline-block bg-orange-100 text-orange-600 px-4 py-1 rounded-full text-sm font-bold mb-3">Education</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">The Spark ⚡</h3>
+                    <p class="text-gray-600 mb-4">Igniting minds through Dawo Scholars scholarships and Digital Hubs that bring tech to every corner.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>✓ Dawo Scholars Program</li>
+                        <li>✓ Ignite Digital Hubs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- The Pulse -->
+            <div data-aos="flip-left" data-aos-delay="100" class="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop" alt="Health" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="inline-block bg-green-100 text-green-600 px-4 py-1 rounded-full text-sm font-bold mb-3">Health</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">The Pulse 💓</h3>
+                    <p class="text-gray-600 mb-4">Mobile clinics and maternal care bringing wellness to every doorstep in Rarieda.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>✓ The Wellness Wagon</li>
+                        <li>✓ Mama & Mtoto Support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- The Hustle -->
+            <div data-aos="flip-left" data-aos-delay="200" class="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=400&fit=crop" alt="Economic" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="inline-block bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-bold mb-3">Economic</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">The Hustle 💼</h3>
+                    <p class="text-gray-600 mb-4">From bootcamps to seed capital, we're turning ideas into income and dreams into businesses.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>✓ Entrepreneurship Bootcamps</li>
+                        <li>✓ Seed Capital Fund</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- The Green Gold -->
+            <div data-aos="flip-left" data-aos-delay="300" class="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift">
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop" alt="Agriculture" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="inline-block bg-green-100 text-green-600 px-4 py-1 rounded-full text-sm font-bold mb-3">Agriculture</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">The Green Gold 🌾</h3>
+                    <p class="text-gray-600 mb-4">Climate-smart farming and value-addition labs transforming harvests into prosperity.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>✓ Climate-Smart Demo Farms</li>
+                        <li>✓ Value-Addition Labs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- The Anchor -->
+            <div data-aos="flip-left" data-aos-delay="400" class="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift md:col-span-2 lg:col-span-1">
+                <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&h=400&fit=crop" alt="Inclusion" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="inline-block bg-orange-100 text-orange-600 px-4 py-1 rounded-full text-sm font-bold mb-3">Inclusion</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">The Anchor ⚓</h3>
+                    <p class="text-gray-600 mb-4">Empowering persons with disabilities and climate guardians to lead change.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>✓ Limitless PWD Program</li>
+                        <li>✓ Climate Guardians</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Impact Grid -->
+<section id="impact" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">Impact Grid</h2>
+            <p class="text-xl text-gray-600">Expected outcomes that move the needle</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div data-aos="fade-up" class="md:col-span-2 bg-gradient-to-br from-orange-500 to-orange-600 p-8 rounded-3xl text-white">
+                <h3 class="text-3xl font-bold mb-4">Keeping the Classroom Full 📚</h3>
+                <p class="text-lg mb-4">500+ students supported with scholarships and digital learning tools</p>
+                <div class="flex items-center space-x-4">
+                    <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                        <p class="text-2xl font-bold">85%</p>
+                        <p class="text-sm">Retention Rate</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                        <p class="text-2xl font-bold">10+</p>
+                        <p class="text-sm">Digital Hubs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-gradient-to-br from-green-500 to-green-600 p-8 rounded-3xl text-white">
+                <h3 class="text-2xl font-bold mb-4">Bumper Harvests, Brighter Mornings 🌱</h3>
+                <p class="text-lg mb-4">300+ farmers trained in climate-smart agriculture</p>
+                <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full inline-block">
+                    <p class="text-3xl font-bold">40%</p>
+                    <p class="text-sm">Yield Increase</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-3xl text-white">
+                <h3 class="text-2xl font-bold mb-4">From Skills to Salaries 💰</h3>
+                <p class="text-lg mb-4">200+ entrepreneurs launched with seed capital</p>
+                <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full inline-block">
+                    <p class="text-3xl font-bold">150+</p>
+                    <p class="text-sm">Jobs Created</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300" class="md:col-span-2 bg-gradient-to-br from-green-600 to-green-700 p-8 rounded-3xl text-white">
+                <h3 class="text-3xl font-bold mb-4">Healthier Families, Stronger Communities 💪</h3>
+                <p class="text-lg mb-4">5,000+ community members reached through mobile clinics and maternal care programs</p>
+                <div class="flex items-center space-x-4">
+                    <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                        <p class="text-2xl font-bold">1,200+</p>
+                        <p class="text-sm">Mothers Supported</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                        <p class="text-2xl font-bold">24/7</p>
+                        <p class="text-sm">Wellness Wagon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Get Involved Section -->
+<section id="involved" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 via-white to-green-50 pattern-bg">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">Join the Family</h2>
+            <p class="text-xl text-gray-600">Every contribution fuels transformation</p>
+        </div>
+
+        <!-- Donation Tiers -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div data-aos="zoom-in" class="bg-white p-8 rounded-3xl shadow-lg hover-lift border-4 border-orange-200">
+                <div class="text-5xl mb-4">⚡</div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">The Spark</h3>
+                <p class="text-4xl font-extrabold text-orange-500 mb-4">$10</p>
+                <p class="text-gray-600 mb-6">Provide school supplies for one student for a month</p>
+                <button class="w-full bg-orange-500 text-white py-3 rounded-full font-bold hover:bg-orange-600 transition">Donate Now</button>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="100" class="bg-white p-8 rounded-3xl shadow-lg hover-lift border-4 border-green-500 transform scale-105">
+                <div class="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">Most Popular</div>
+                <div class="text-5xl mb-4">🛡️</div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">The Guardian</h3>
+                <p class="text-4xl font-extrabold text-green-500 mb-4">$50</p>
+                <p class="text-gray-600 mb-6">Support a family with health services and agricultural training</p>
+                <button class="w-full bg-green-500 text-white py-3 rounded-full font-bold hover:bg-green-600 transition">Donate Now</button>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="200" class="bg-white p-8 rounded-3xl shadow-lg hover-lift border-4 border-blue-200">
+                <div class="text-5xl mb-4">🚀</div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">The Game Changer</h3>
+                <p class="text-4xl font-extrabold text-blue-500 mb-4">$250</p>
+                <p class="text-gray-600 mb-6">Fund seed capital for an entrepreneur or sponsor a digital hub</p>
+                <button class="w-full bg-blue-500 text-white py-3 rounded-full font-bold hover:bg-blue-600 transition">Donate Now</button>
+            </div>
+        </div>
+
+        <!-- Volunteer & Partner -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <div data-aos="fade-right" class="bg-white p-8 rounded-3xl shadow-lg">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Lend Us Your Brain 🧠</h3>
+                <p class="text-gray-600 mb-6">Share your expertise as a mentor in education, health, business, or agriculture. Guide the next generation of Rarieda leaders.</p>
+                <button class="bg-orange-500 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition">Become a Mentor</button>
+            </div>
+
+            <div data-aos="fade-left" class="bg-white p-8 rounded-3xl shadow-lg">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Power Partners 🤝</h3>
+                <p class="text-gray-600 mb-6">Corporate partnerships that create lasting impact. Join forces with us to scale programs and transform communities.</p>
+                <button class="bg-green-500 text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition">Partner With Us</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Signals -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <p class="text-center text-gray-600 font-semibold mb-8">Trusted Partners in Transformation</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            <div class="bg-gray-100 px-8 py-4 rounded-2xl">
+                <p class="text-gray-700 font-bold">County Government of Siaya</p>
+            </div>
+            <div class="bg-gray-100 px-8 py-4 rounded-2xl">
+                <p class="text-gray-700 font-bold">Ministry of Health</p>
+            </div>
+            <div class="bg-gray-100 px-8 py-4 rounded-2xl">
+                <p class="text-gray-700 font-bold">Ministry of Education</p>
+            </div>
+            <div class="bg-gray-100 px-8 py-4 rounded-2xl">
+                <p class="text-gray-700 font-bold">Local Community Leaders</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h4 class="text-2xl font-bold gradient-text mb-4">DAWO</h4>
+                <p class="text-gray-400">Building resilience, spreading hope, leveling the field in Rarieda, Kenya.</p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">Quick Links</h5>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#about" class="hover:text-orange-500 transition">About Us</a></li>
+                    <li><a href="#leadership" class="hover:text-orange-500 transition">Leadership</a></li>
+                    <li><a href="#programs" class="hover:text-orange-500 transition">Programs</a></li>
+                    <li><a href="#impact" class="hover:text-orange-500 transition">Impact</a></li>
+                    <li><a href="#involved" class="hover:text-orange-500 transition">Get Involved</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">Contact</h5>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Rarieda, Siaya County</li>
+                    <li>Kenya</li>
+                    <li>info@dawofoundation.org</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">Follow Us</h5>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-orange-500 w-10 h-10 rounded-full flex items-center justify-center hover:bg-orange-600 transition">F</a>
+                    <a href="#" class="bg-green-500 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-600 transition">T</a>
+                    <a href="#" class="bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition">I</a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 The Dawo Foundation. All rights reserved. Built with passion for Rarieda.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+</script>
+
+</body>
+</html>
